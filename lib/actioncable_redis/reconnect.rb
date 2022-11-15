@@ -27,4 +27,5 @@ module ActionCableRedisListenerPatch
   end
 end
 
+warn "Patching ActionCable::SubscriptionAdapter::Redis::Listener from #{__FILE__}"
 ActionCable::SubscriptionAdapter::Redis::Listener.prepend(ActionCableRedisListenerPatch)
